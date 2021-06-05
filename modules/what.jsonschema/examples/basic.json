@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "properties": {
+    "stringvalue":{
+      "type":"string"
+    },
+    "intvalue":{
+      "type":"integer"
+    },
+    "refobjectbyID":{
+      "$ref": "#refValue"
+    },
+    "refobjectbyPath":{
+      "$ref": "#/definitons/referenceValue"
+    }
+  },
+  "definitions": {
+    "referenceValue":{
+      "$id":"refValue",
+      "type":"string"
+    }
+  }
+}
